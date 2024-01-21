@@ -46,6 +46,7 @@ function DeckInput({ onDeckChange }: DeckInputProps) {
       </div>
       <form autoCapitalize="characters" autoComplete="off" onSubmit={handleSubmit}>
         <input
+          autoCorrect="false"
           className="deck-input-deck"
           maxLength={15}
           onChange={handleDeckChange}
@@ -54,6 +55,7 @@ function DeckInput({ onDeckChange }: DeckInputProps) {
           value={deckInput}
         />
         <input
+          autoCorrect="false"
           className="deck-input-card"
           maxLength={3}
           onChange={handleCutChange}
