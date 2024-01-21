@@ -1,0 +1,21 @@
+.scorable-table {
+  background-color: #e0e0e0;
+  border-radius: .5em;
+  font-size: 1.3em;
+  margin-top: 1.5em;
+  padding: 1em;
+}
+
+.scorable-table .scorable-table-total {
+  font-weight: bold;
+}
+
+.scorable-table table {
+  border-collapse: separate;
+  border-spacing: .3em;
+  width: 100%;
+}
+
+.scorable-table td:nth-child(3) {
+  text-align: end;
+}

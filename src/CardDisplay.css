@@ -1,0 +1,37 @@
+.card {
+  background-color: #fafafa;
+  border: 1px solid #000;
+  border-radius: .25em;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  height: 2.8em;
+  line-height: 1;
+  padding: 0;
+  text-align: center;
+  width: 1.8em;
+}
+
+.card.clubs,
+.card.spades {
+  color: #000;
+}
+
+.card.diamonds,
+.card.hearts {
+  color: #f00;
+}
+
+.card .rank,
+.card .suit {
+  display: block;
+}
+
+.card span.rank {
+  margin-top: .35em;
+}
+
+.card span.suit {
+  font-size: 1.4em;
+  line-height: 0.8;
+}
