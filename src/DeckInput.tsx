@@ -44,23 +44,21 @@ function DeckInput({ onDeckChange }: DeckInputProps) {
       <div className={"deck-input-header" + (error && " error")}>
         {error ? error : "Enter deck and cut:"}
       </div>
-      <form onSubmit={handleSubmit}>
+      <form autoCapitalize="characters" autoComplete="off" onSubmit={handleSubmit}>
         <input
-          autoCapitalize="characters"
-          autoComplete="off"
           className="deck-input-deck"
           maxLength={15}
           onChange={handleDeckChange}
           placeholder="Deck"
+          spellCheck="false"
           value={deckInput}
         />
         <input
-          autoCapitalize="characters"
-          autoComplete="off"
           className="deck-input-card"
           maxLength={3}
           onChange={handleCutChange}
           placeholder="Cut"
+          spellCheck="false"
           value={cutInput}
         />
         <button type="submit">Calculate</button>
